@@ -1,0 +1,11 @@
+# Vectorize your data!
+
+Notes and examples for a talk at the [Open Machine Learning, ETC. meetup on 15 March 2018](https://www.meetup.com/OpenMLetc/events/248425799/).
+
+The notebook uses several Python packages that are available through the [Anaconda Python Distribution](https://www.anaconda.com/download). Get started by running `jupyter notebook` in this directory, and if you run in to errors about missing packages while working through the notebook, install them with `conda install`.
+
+The notebook also uses an example data set published on Kaggle, [The Movies Dataset](https://www.kaggle.com/rounakbanik/the-movies-dataset). This is a combined data set that includes several other sources like IMDB and MovieLens; for this project, it’s convenient because it includes the cast list for each movie. You’ll need to download this manually and unzip it in the `data` folder of this project. (The only files we actually need are `movies_metadata.csv` and `credits.csv`.)
+
+> The first step of a machine learning project is to develop a vector representation of your input data. Sometimes, there’s an obvious approach to developing features: in many domains, such as computer vision or speech recognition, the “raw” form of the data is already represented as a vector, and thanks to recent advances in the field of deep learning we now have a suite of powerful methods that work directly with this raw input. However, there are many interesting and important domains for which the initial step of creating vectorized representations is not as obvious or straightforward. Examples include natural language processing or sparse event-based data streams.
+> 
+> This talk will review some of the classic strategies for vectorizing text documents, including (briefly) the bag-of-words model and methods for producing semantically meaningful vector embeddings such as word2vec and GloVe. Then, we’ll introduce a related but much simpler approach that’s based on word counts and matrix factorization — we’ll show that this approach is straightforward to compute, highly scalable, provides vectors that are easy to interpret, and is competitive with other methodologies like GloVe. And finally, we’ll work through some examples that show how this approach is easy to generalize to many types of data sets beyond natural language corpora.
